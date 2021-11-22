@@ -1,0 +1,6 @@
+pubkey
+pubkey.gpg
+terraform.*
+.terraform
+.terraform.lock.hcl
+.idea
