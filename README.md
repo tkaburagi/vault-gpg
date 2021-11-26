@@ -1,6 +1,8 @@
 ## setup
 ```shell
 git clone https://github.com/LeSuisse/vault-gpg-plugin
+cd vault-gpg-plugin
+go build -o gpg-plugin main.go 
 vault server -dev -dev-root-token-id=root -dev-plugin-dir=./plugin
 vault secrets enable -path=gpg gpg-plugin
 vault write -force gpg/keys/gpg-key-tf real_name=se_tkabu
